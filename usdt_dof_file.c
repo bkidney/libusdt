@@ -66,7 +66,7 @@ load_dof(int fd, dof_helper_t *dh)
 
 #ifdef __FreeBSD__
         if (ret != -1)
-                ret = dh->gen;
+                ret = dh->dofhp_gen;
 #endif
         return ret;
 }
